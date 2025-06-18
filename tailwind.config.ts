@@ -61,13 +61,19 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				accentGold: 'hsl(var(--accent-gold))',
+				accentSilver: 'hsl(var(--accent-silver))',
 			},
 			borderRadius: {
-				lg: 'var(--radius)',
-				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+				lg: 'var(--radius)', /* 4px with new --radius */
+				md: 'calc(var(--radius) - 2px)', /* 2px with new --radius */
+				sm: 'calc(var(--radius) - 4px)' /* 0px with new --radius */
 			},
+			fontFamily: {
+        heading: ['var(--font-heading)', 'serif'],
+        body: ['var(--font-body)', 'sans-serif'],
+      },
 			keyframes: {
 				'accordion-down': {
 					from: {
